@@ -596,6 +596,75 @@
 
 /* Image */
 
+.skills {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.skill {
+		margin: 0 1.5rem 1rem 0;
+	}
+
+	.ruby {
+		font-size: 3.5rem;
+	}
+
+	.rails {
+		font-size: 3.3rem;
+	}
+
+	.js {
+		font-size: 3.2rem;
+	}
+
+	.react {
+		font-size: 3.3rem;
+	}
+
+	.jq {
+		font-size: 3.5rem;
+	}
+
+	.pg {
+		font-size: 3.5rem;
+	}
+
+	.html {
+		font-size: 3.5rem;
+	}
+
+	.css {
+		font-size: 3.5rem;
+	}
+
+	.git {
+		font-size: 3.7rem;
+	}
+
+	.aws {
+		font-size: 3.7rem;
+	}
+
+	.heroku {
+		font-size: 3.5rem;
+	}
+
+	.atom {
+		font-size: 3.5rem;
+	}
+
+	.github {
+		font-size: 3.3rem;
+	}
+
+	.gitlab {
+		font-size: 3.3rem;
+	}
+
+	.webpack {
+		font-size: 4rem;
+	}
+
 	.image {
 		border-radius: 4px;
 		border: 0;
