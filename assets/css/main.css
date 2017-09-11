@@ -26,6 +26,10 @@
 		line-height: 1;
 	}
 
+	::-webkit-scrollbar {
+    display: none;
+}
+
 	ol, ul {
 		list-style: none;
 	}
@@ -257,6 +261,7 @@
 
 	pre {
 		-webkit-overflow-scrolling: touch;
+		overflow: hidden;
 		font-family: "Courier New", monospace;
 		font-size: 0.9rem;
 		margin: 0 0 2rem 0;
