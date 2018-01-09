@@ -140,12 +140,22 @@
     function() {
       // $("img").attr("src", "images/imgir.gif");
       var foo = $(this).attr("src");
-      // $(this).parent().siblings("div").css("display", "none")
-      foo = foo.split(".")[0] + ".gif";
-      $(this).attr("src", foo);
-    },
-    function() {
-      // $(this).parent().siblings("div").css("display", "block")
+      $(this)
+        .parent()
+        .siblings("div")
+        .css("background", "rgb(255, 255, 255, 0.8)")
+        .css("border", "3px solid #26792F")
+        .css("font-weight", "800");
+        foo = foo.split(".")[0] + ".gif";
+        $(this).attr("src", foo);
+      },
+      function() {
+        $(this)
+        .parent()
+        .siblings("div")
+        .css("background", "none")
+        .css("font-weight", "400")
+        .css("border", "none")
       var foo = $(this).attr("src");
       foo = foo.split(".")[0] + ".png";
       $(this).attr("src", foo);
