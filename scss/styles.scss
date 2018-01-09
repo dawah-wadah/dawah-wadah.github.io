@@ -1092,7 +1092,7 @@ li.appear:nth-child(17) {
 }
 
 img {
-  height: auto;
+  height: 300px;
   width: 300px;
   object-fit: contain;
 }
@@ -1105,9 +1105,11 @@ img {
 img {
   transition: all 0.2s ease-in-out;
 }
-// img:hover { transform: scale(1.1); }
+img:hover { transform: scale(1.1); }
 img:hover {
+  max-height: 300px;
   width: 500px;
+  object-fit: cover;
 }
 
 .project-info a {
