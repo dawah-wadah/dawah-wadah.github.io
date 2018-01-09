@@ -1072,7 +1072,6 @@ li.appear:nth-child(17) {
   animation-delay: 1s;
 }
 
-
 @keyframes bounceIn {
   0% {
     opacity: 0;
@@ -1100,14 +1099,17 @@ img {
 
 .larger {
   width: 600px;
-  transition: cubic-bezier(0.23, 1, 0.320, 1)
+  transition: cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-img { transition: all .2s ease-in-out; }
+img {
+  transition: all 0.2s ease-in-out;
+}
 // img:hover { transform: scale(1.1); }
-img:hover { width: 900px }
+img:hover {
+  width: 500px;
+}
 
 .project-info a {
   margin: 0 15px;
 }
-

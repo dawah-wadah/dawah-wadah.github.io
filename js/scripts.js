@@ -140,12 +140,12 @@
     function() {
       // $("img").attr("src", "images/imgir.gif");
       var foo = $(this).attr("src");
-      $(this).parent().siblings("div").css("display", "none")
+      // $(this).parent().siblings("div").css("display", "none")
       foo = foo.split(".")[0] + ".gif";
       $(this).attr("src", foo);
     },
     function() {
-      $(this).parent().siblings("div").css("display", "block")
+      // $(this).parent().siblings("div").css("display", "block")
       var foo = $(this).attr("src");
       foo = foo.split(".")[0] + ".png";
       $(this).attr("src", foo);
