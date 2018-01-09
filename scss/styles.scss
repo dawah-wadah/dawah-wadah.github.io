@@ -1097,3 +1097,17 @@ img {
   width: 300px;
   object-fit: contain;
 }
+
+.larger {
+  width: 600px;
+  transition: cubic-bezier(0.23, 1, 0.320, 1)
+}
+
+img { transition: all .2s ease-in-out; }
+// img:hover { transform: scale(1.1); }
+img:hover { width: 900px }
+
+.project-info a {
+  margin: 0 15px;
+}
+

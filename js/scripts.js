@@ -128,13 +128,29 @@
     });
   });
 
-  $("#skills i").mouseenter(function(){
-      debugger
-      $(this).addClass("colored")
-  })
-  $("#skills i").mouseout(function(){
-      $(this).removeClass("colored")
-  })
+  // $("img").mouseenter(function(){
+  //   console.log($(this).parent)
+  //     $(this).addClass("larger")
+  // })
+  // $("img").mouseout(function(){
+  //     $(this).removeClass("larger")
+  // })
+
+  $("img").hover(
+    function() {
+      // $("img").attr("src", "images/imgir.gif");
+      var foo = $(this).attr("src");
+      $(this).parent().siblings("div").css("display", "none")
+      foo = foo.split(".")[0] + ".gif";
+      $(this).attr("src", foo);
+    },
+    function() {
+      $(this).parent().siblings("div").css("display", "block")
+      var foo = $(this).attr("src");
+      foo = foo.split(".")[0] + ".png";
+      $(this).attr("src", foo);
+    }
+  );
 
   // Open mobile menu
   $("#mobile-menu-open").click(function() {
@@ -159,7 +175,7 @@ var win = $(window);
 
 var allMods = $(".project");
 
-var lils = $("#skills li")
+var lils = $("#skills li");
 
 allMods.each(function(i, el) {
   var el = $(el);
