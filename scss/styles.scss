@@ -647,10 +647,11 @@ footer {
 .project {
   position: relative;
   max-width: 900px;
-  margin: 0 auto 30px auto;
+  margin: 5px;
   overflow: hidden;
   background: #fff;
   border-radius: 4px;
+  width: 49%;
 }
 
 .project-image {
@@ -895,6 +896,9 @@ footer {
     h2 {
       font-size: 1.75em;
     }
+    .project {
+      width: 100%;
+    }
   }
 
   #about {
@@ -903,6 +907,11 @@ footer {
     p {
       text-align: left;
     }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .project {
+    width: 100%;
   }
 }
 
@@ -958,6 +967,9 @@ footer {
     span {
       float: none;
     }
+  }
+  .project {
+    width: 100%;
   }
 
   .project-image {
@@ -1072,6 +1084,11 @@ li.appear {
 //   animation-delay: 1s;
 // }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 @keyframes bounceIn {
   0% {
     opacity: 0;
@@ -1105,7 +1122,9 @@ img {
 img {
   transition: all 0.2s ease-in-out;
 }
-img:hover { transform: scale(1.1); }
+img:hover {
+  transform: scale(1.1);
+}
 img:hover {
   max-height: 300px;
   width: 500px;
@@ -1117,5 +1136,5 @@ img:hover {
 }
 
 #bird:hover {
-  object-fit: cover
+  object-fit: cover;
 }
