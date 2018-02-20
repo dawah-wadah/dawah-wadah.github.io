@@ -136,6 +136,8 @@
   //     $(this).removeClass("larger")
   // })
 
+  var ext;
+
   $("img").hover(
     function() {
       // $("img").attr("src", "images/imgir.gif");
@@ -146,18 +148,19 @@
         .css("background", "rgb(255, 255, 255, 0.8)")
         .css("border", "3px solid #26792F")
         .css("font-weight", "800");
-        foo = foo.split(".")[0] + ".gif";
-        $(this).attr("src", foo);
-      },
-      function() {
-        $(this)
+      ext = foo.split(".")[1];
+      foo = foo.split(".")[0] + ".gif";
+      $(this).attr("src", foo);
+    },
+    function() {
+      $(this)
         .parent()
         .siblings("div")
         .css("background", "none")
         .css("font-weight", "400")
-        .css("border", "none")
+        .css("border", "none");
       var foo = $(this).attr("src");
-      foo = foo.split(".")[0] + ".png";
+      foo = foo.split(".")[0] + "." + ext;
       $(this).attr("src", foo);
     }
   );
